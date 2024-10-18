@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  body {
+    color: #555555;
+    font-size: 1em;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: radial-gradient(#e0dd2e, #ba6a02);
+    overflow: hidden;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 3em;
+    padding-top: 1em;
+  
+    & div {
+      display: flex;
+      gap: 20%;
+      text-decoration: none;
+    }
+  
+    & a {
+      color: #000;
+    }
+  }
+  
+  article {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10em;
+    align-content: center;
+  
+    & img {
+      width: 550px;
+    }
+  
+    & h2 {
+      font-size: 7em;
+    }
+  
+    & h3 {
+      color: rgb(76, 0, 255);
+      font-size: 2em;
+    }
+    & button {
+      margin-top: 1em;
+      width: 10em;
+      height: 2em;
+      border-radius: 0.3em;
+    }
+    & button:hover {
+      background-color: #f835ee;
+    }
+  }
+  
+  .arrows {
+    width: 85vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    display: flex;
+    justify-content: space-between;
+  
+    & i {
+      font-size: 5em;
+      color: #eee;
+    }
+    & i:hover {
+      color: #209120;
+    }
+  }
+  
+  .lines {
+    padding-top: 150px;
+    & p {
+      font-size: 5em;
+    }
+    & ul {
+      display: flex;
+      gap: 1em;
+  
+      & li {
+        width: 20px;
+        height: 30px;
+        font-size: 50px;
+        color: #eee;
+      }
+      & .active {
+        color: #209120;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    header {
+      margin-right: 20px;
+    }
+  
+    article {
+      flex-wrap: wrap;
+      & img {
+        width: 350px;
+      }
+    }
+  }
+  
+  .lines {
+    padding-top: 0px;
+    & p {
+      font-size: 2em;
+    }
+    & ul {
+      display: flex;
+      gap: 1em;
+  
+      & li {
+        width: 10px;
+        height: 15px;
+        font-size: 25px;
+        color: #eee;
+      }
+    }
+  }
